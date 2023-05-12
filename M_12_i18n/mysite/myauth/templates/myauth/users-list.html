@@ -1,0 +1,30 @@
+{% extends 'myauth/base.html' %}
+
+{% block title %}
+    Update users
+{% endblock %}
+
+{% block body %}
+
+    <h1>Users:</h1>
+    {% if users %}
+        {% for user in users %}
+            <div>
+                <p><a href="{% url 'myauth:user_me' pk=user.pk %}">Username: {{ user.username }}</a></p>
+                <p>
+                    <div>Firstname: {{ user.first_name }}</div>
+                    <div>Lastname: {{ user.last_name }}</div>
+                <div>
+                    {% if user.profile.avatar %}
+                        <img src="{{ user.profile.avatar.url }}" alt="{{ user.profile.avatar.name }}">
+                    {% else %}
+                       <div>No avatar yet!</div>
+                    {% endif %}
+                </div>
+        {% endfor %}
+
+    {% else %}
+        <div>No user create yet</div>
+    {% endif %}
+
+{% endblock %}

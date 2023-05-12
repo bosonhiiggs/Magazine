@@ -1,0 +1,57 @@
+[
+  {
+    "fields": {
+      "order": 1,
+      "product": 2
+    },
+    "model": "shopapp.order_products",
+    "pk": 1
+  },
+  {
+    "fields": {
+      "order": 1,
+      "product": 1
+    },
+    "model": "shopapp.order_products",
+    "pk": 2
+  },
+  {
+    "fields": {
+      "order": 1,
+      "product": 4
+    },
+    "model": "shopapp.order_products",
+    "pk": 3
+  },
+  {
+    "fields": {
+      "order": 1,
+      "product": 3
+    },
+    "model": "shopapp.order_products",
+    "pk": 4
+  },
+  {
+    "fields": {
+      "order": 3,
+      "product": 1
+    },
+    "model": "shopapp.order_products",
+    "pk": 9
+  },
+  {
+    "fields": {
+      "order": 3,
+      "product": 4
+    },
+    "model": "shopapp.order_products",
+    "pk": 10
+  },
+  {
+    "fields": {
+      "order": 5,
+      "product": 2
+    },
+    "model": "shopapp.order_products",
+    "pk": 13
+  }]

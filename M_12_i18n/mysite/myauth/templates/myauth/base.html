@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+      {% block title %}
+      {% endblock %}
+    </title>
+</head>
+<body>
+    {% block body %}
+    {% endblock %}
+<div>
+    <a href="{% url 'shopapp:index' %}">Enter to shop</a>
+</div>
+<div>
+    <a href="{% url 'myauth:users' %}">Users list</a>
+</div>
+<div>
+    <a href="{% url 'myauth:about_me' %}">Personal account</a> <b>|</b>
+    <a href="{% url 'myauth:logout' %}">Logout</a>
+</div>
+</body>
+</html>

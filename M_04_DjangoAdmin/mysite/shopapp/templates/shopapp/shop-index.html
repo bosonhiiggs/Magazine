@@ -1,0 +1,19 @@
+{% extends 'shopapp/base.html' %}
+
+{% block title %}
+    Shop Menu
+{% endblock %}
+
+{% block body %}
+
+    <ul>
+        <li><a href="http://127.0.0.1:8000/shop/products/">Products List</a></li>
+        <li><a href="http://127.0.0.1:8000/shop/groups/">Groups List</a></li>
+        <li><a href="http://127.0.0.1:8000/shop/orders/">Orders List</a></li>
+    </ul>
+
+    <div>
+        Time running: {{ time_running }}
+    </div>
+
+{% endblock %}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>
+    {% block title %}
+      Base Title
+    {% endblock %}
+  </title>
+</head>
+<body>
+
+{% block body %}
+  Base body
+{% endblock %}
+
+<div>
+    {% if user.is_authenticated %}
+        <div>
+            <a href="{% url "myauth:about-me" %}">About me</a> <b>|</b> <a href="{% url "myauth:logout" %}">Logout</a>
+            <br>
+            <div>
+                <a href="{% url 'shopapp:orders_list' %}">Orders list</a> <b>|</b>
+                <a href="{% url 'shopapp:products_list' %}">Products list</a>
+            </div>
+            <div>
+                <a href="{% url 'shopapp:products-export' %}">Products JSON</a> <b>|</b>
+                <a href="{% url 'shopapp:orders-export' %}">Orders JSON</a>
+            </div>
+        </div>
+    {% else %}
+        <div>
+            <a href="{% url "myauth:login" %}">Login</a> <b>|</b> <a href="{% url "myauth:register" %}">Register</a>
+        <div>
+    {% endif %}
+</div>
+
+</body>
+</html>
