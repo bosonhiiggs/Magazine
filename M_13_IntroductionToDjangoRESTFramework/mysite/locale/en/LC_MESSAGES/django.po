@@ -1,0 +1,168 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-05-11 12:40+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: myauth/views.py:21
+msgid "welcome hello world!"
+msgstr "Hello world!"
+
+#: myauth/views.py:27
+#, python-brace-format
+msgid "one product"
+msgid_plural "{count} products"
+msgstr[0] "One Product"
+msgstr[1] "{count} Products"
+
+#: mysite/settings.py:129
+msgid "English"
+msgstr ""
+
+#: mysite/settings.py:130
+msgid "Russian"
+msgstr ""
+
+#: shopapp/models.py:13 shopapp/templates/shopapp/products-details.html:6
+#: shopapp/templates/shopapp/products-details.html:10
+msgid "Product"
+msgstr "Product"
+
+#: shopapp/models.py:14 shopapp/templates/shopapp/products-list.html:10
+msgid "Products"
+msgstr "Products"
+
+#: shopapp/models.py:40
+msgid "Order"
+msgstr "Order"
+
+#: shopapp/models.py:41
+msgid "Orders"
+msgstr "Orders"
+
+#: shopapp/templates/shopapp/products-details.html:12
+msgid "Description"
+msgstr "Description"
+
+#: shopapp/templates/shopapp/products-details.html:13
+#: shopapp/templates/shopapp/products-list.html:24
+msgid "Price"
+msgstr "Price"
+
+#: shopapp/templates/shopapp/products-details.html:14
+#: shopapp/templates/shopapp/products-list.html:26
+msgid "Discount"
+msgstr "Discount"
+
+#: shopapp/templates/shopapp/products-details.html:15
+msgid "Archived"
+msgstr "Archived"
+
+#: shopapp/templates/shopapp/products-details.html:19
+#, fuzzy, python-format
+#| msgid ""
+#| "\n"
+#| "                There is only one product.\n"
+#| "                "
+#| msgid_plural ""
+#| "\n"
+#| "                There are %(products_count)s products\n"
+#| "            "
+msgid ""
+"\n"
+"            <h3>Only one image</h3>\n"
+"            "
+msgid_plural ""
+"\n"
+"            <h3>%(image_count)s images:</h3>\n"
+"        "
+msgstr[0] ""
+"\n"
+"            <h3>Only one image</h3>\n"
+"            "
+msgstr[1] ""
+"\n"
+"            <h3>%(image_count)s images:</h3>\n"
+"        "
+
+#: shopapp/templates/shopapp/products-details.html:35
+#, python-format
+msgid ""
+"\n"
+"\n"
+"        <a href=\"%(update_product_view)s\">Update product</a>\n"
+"        <a href=\"%(delete_product_view)s\">Archive product</a>\n"
+"\n"
+"    "
+msgstr ""
+
+#: shopapp/templates/shopapp/products-details.html:43
+msgid "Back to products list"
+msgstr "Back to products list"
+
+#: shopapp/templates/shopapp/products-list.html:6
+msgid "Products list"
+msgstr "Products list"
+
+#: shopapp/templates/shopapp/products-list.html:13
+#, python-format
+msgid ""
+"\n"
+"                There is only one product.\n"
+"                "
+msgid_plural ""
+"\n"
+"                There are %(products_count)s products\n"
+"            "
+msgstr[0] ""
+"\n"
+"                There is only one product.\n"
+"                "
+msgstr[1] ""
+"\n"
+"                There are %(products_count)s products\n"
+"            "
+
+#: shopapp/templates/shopapp/products-list.html:23
+msgctxt "product name"
+msgid "Name"
+msgstr "Name"
+
+#: shopapp/templates/shopapp/products-list.html:25
+msgid "no discount"
+msgstr "No discount"
+
+#: shopapp/templates/shopapp/products-list.html:33
+msgid "Create a new product"
+msgstr "Create a new product"
+
+#: shopapp/templates/shopapp/products-list.html:37
+#, python-format
+msgid ""
+"\n"
+"            <h3>No products yet</h3>\n"
+"            <a href=\"%(create_product_url)s\"\n"
+"            >Create a new product</a>\n"
+"        "
+msgstr ""
+
+#~ msgid "Images"
+#~ msgstr "Images"
+
+#~ msgid "Update product"
+#~ msgstr "Update product"
+
+#~ msgid "Archive product"
+#~ msgstr "Archive product"
